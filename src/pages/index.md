@@ -1,9 +1,11 @@
 ---
-templateKey: index-page
-siteTitle: Index
-image: /img/home-jumbotron.jpg
 heading: Great coffee with a conscience
 subheading: Support sustainable farming while enjoying a cup
+aboutMe:
+  heading: About Me Heading
+  description: About Me Description
+templateKey: index-page
+siteTitle: Index
 mainpitch:
   title: Why Kaldi
   description: >
@@ -11,9 +13,7 @@ mainpitch:
     shouldn't just taste good, it should do good too. We source all of our beans
     directly from small scale sustainable farmers and make sure part of the
     profits are reinvested in their communities.
-aboutMe:
-  heading: About Me Heading
-  description: About Me Description
+  resume: /img/bi-s_resume.docx
 intro:
   blurbs:
     - image: /img/coffee.png
@@ -50,6 +50,7 @@ intro:
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
 title: Great coffee with a conscience
+image: /img/home-jumbotron.jpg
 main:
   heading: Great coffee with no compromises
   description: >
