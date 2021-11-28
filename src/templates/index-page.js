@@ -33,7 +33,7 @@ export const IndexPageTemplate = ({
                     </div>
                     <div className="tile">
                       <h3 className="subtitle">{mainpitch.description}</h3>
-                      <a href={mainpitch.resume} download>
+                      <a href={mainpitch.resume.id} download>
                         Download
                       </a>
                     </div>
@@ -128,7 +128,9 @@ export const pageQuery = graphql`
         mainpitch {
           title
           description
-          resume
+          resume {
+            id
+          }
         }
         intro {
           blurbs {
