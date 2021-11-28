@@ -11,18 +11,16 @@ import FullWidthImage from "../components/FullWidthImage";
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
   image,
-  title,
   heading,
   subheading,
   mainpitch,
-  description,
   intro,
 }) => {
   const heroImage = getImage(image) || image;
 
   return (
     <div>
-      <FullWidthImage img={heroImage} title={title} subheading={subheading} />
+      <FullWidthImage img={heroImage} title={heading} subheading={subheading} />
       <section className="section section--gradient">
         <div className="container">
           <div className="section">
@@ -35,14 +33,17 @@ export const IndexPageTemplate = ({
                     </div>
                     <div className="tile">
                       <h3 className="subtitle">{mainpitch.description}</h3>
+                      <a href={mainpitch.resume} download>
+                        Download
+                      </a>
                     </div>
                   </div>
                   <div className="columns">
                     <div className="column is-12">
                       <h3 className="has-text-weight-semibold is-size-2">
-                        {heading}
+                        {intro.heading}
                       </h3>
-                      <p>{description}</p>
+                      <p>{intro.description}</p>
                     </div>
                   </div>
                   <Features gridItems={intro.blurbs} />
@@ -76,11 +77,10 @@ export const IndexPageTemplate = ({
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  title: PropTypes.string,
+  siteTitle: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
-  description: PropTypes.string,
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
@@ -93,11 +93,10 @@ const IndexPage = ({ data }) => {
     <Layout>
       <IndexPageTemplate
         image={frontmatter.image}
-        title={frontmatter.title}
+        siteTitle={frontmatter.siteTitle}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
         intro={frontmatter.intro}
       />
     </Layout>
@@ -118,7 +117,7 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-        title
+        siteTitle
         image {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: FULL_WIDTH)
@@ -130,7 +129,6 @@ export const pageQuery = graphql`
           title
           description
         }
-        description
         intro {
           blurbs {
             image {
