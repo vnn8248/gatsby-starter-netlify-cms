@@ -47,4 +47,16 @@ intro:
     java’s origin and support the farmers that grew it. We take coffee
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
+main:
+  heading: test
+  description: test
+  image1:
+    image: /img/code-nguyen-logo.svg
+    alt: test
+  image2:
+    image: /img/chemex.jpg
+    alt: tests
+  image3:
+    image: /img/blog-index.jpg
+    alt: test
 ---
