@@ -128,6 +128,7 @@ export const pageQuery = graphql`
         mainpitch {
           title
           description
+          resume
         }
         intro {
           blurbs {
