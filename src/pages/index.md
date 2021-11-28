@@ -11,6 +11,7 @@ mainpitch:
     shouldn't just taste good, it should do good too. We source all of our beans
     directly from small scale sustainable farmers and make sure part of the
     profits are reinvested in their communities.
+  resume: /img/business-requirements-doc.pdf
 intro:
   blurbs:
     - image: /img/coffee.png
@@ -46,4 +47,16 @@ intro:
     java’s origin and support the farmers that grew it. We take coffee
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
+main:
+  heading: test
+  description: test
+  image1:
+    image: /img/code-nguyen-logo.svg
+    alt: test
+  image2:
+    image: /img/chemex.jpg
+    alt: tests
+  image3:
+    image: /img/blog-index.jpg
+    alt: test
 ---
