@@ -4,6 +4,11 @@ siteTitle: Great coffee with a conscience
 image: /img/home-jumbotron.jpg
 heading: Great coffee with a conscience
 subheading: Support sustainable farming while enjoying a cup
+aboutMe:
+  heading: About Me Heading
+  description: About Me Description
+templateKey: index-page
+siteTitle: Index
 mainpitch:
   title: Why Kaldi
   description: >
@@ -47,6 +52,8 @@ intro:
     java’s origin and support the farmers that grew it. We take coffee
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
+title: Great coffee with a conscience
+image: /img/home-jumbotron.jpg
 main:
   heading: Great coffee with no compromises
   description: >
@@ -63,4 +70,8 @@ main:
   image3:
     alt: Coffee beans
     image: /img/products-grid1.jpg
+description: Kaldi is the ultimate spot for coffee lovers who want to learn
+  about their java’s origin and support the farmers that grew it. We take coffee
+  production, roasting and brewing seriously and we’re glad to pass that
+  knowledge to anyone.
 ---
