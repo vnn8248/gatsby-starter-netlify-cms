@@ -18,6 +18,8 @@ export const IndexPageTemplate = ({
 }) => {
   const heroImage = getImage(image) || image;
 
+  const resumePath = `/img/${mainpitch.resume.relativePath}`
+
   return (
     <div>
       <FullWidthImage img={heroImage} title={heading} subheading={subheading} />
@@ -35,7 +37,7 @@ export const IndexPageTemplate = ({
                       <h3 className="subtitle">{mainpitch.description}</h3>
                     </div>
                     <div className="tile">
-                      <a href={mainpitch.resume} download>Download</a>
+                      <a href={resumePath} download>Download</a>
                     </div>
                   </div>
                   <div className="columns">
@@ -128,7 +130,9 @@ export const pageQuery = graphql`
         mainpitch {
           title
           description
-          resume
+          resume {
+            relativePath
+          }
         }
         intro {
           blurbs {
