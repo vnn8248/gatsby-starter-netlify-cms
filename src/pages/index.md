@@ -12,6 +12,7 @@ mainpitch:
     directly from small scale sustainable farmers and make sure part of the
     profits are reinvested in their communities.
   resume: /img/bi-s_resume.docx
+  picture: /img/hp.jpeg
 intro:
   blurbs:
     - image: /img/coffee.png
