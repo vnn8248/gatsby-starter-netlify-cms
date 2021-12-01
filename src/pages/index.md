@@ -29,7 +29,7 @@ mainpitch:
   picture: /img/hp.jpeg
 heroHeading: Jess Schultz
 portfolio:
-  heading: What I'm Doing Now
+  heading: Portfolio
   description: These are the projects I've done for community organizations,
     clients, and for fun!
   pieces:
