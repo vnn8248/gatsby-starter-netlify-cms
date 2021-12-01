@@ -51,8 +51,8 @@ intro:
     the most. 
 siteTitle: Site Title
 main:
-  heading: test
-  description: test
+  heading: What I'm Doing Now
+  description: These are the projects I've done for clients, school, and for fun!
   image1:
     image: /img/code-nguyen-logo.svg
     alt: test
