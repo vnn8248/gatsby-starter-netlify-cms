@@ -1,15 +1,20 @@
 ---
 heroImage: /img/blog-index.jpg
 skills:
-  heading: My Favorite Tools
-  description: These are my favorite tools
+  heading: What I'm Doing Now
+  description: Currently, I am a masters student for UNC's MEITE program in the
+    school of education. It is a masters program in education innovation,
+    technology, and entrepreneurship. I have partnered with Professor Ryoo to be
+    a part of the Design Thinking grant project. I also work with HealthHIV.org
+    to develop instructional design courses and materials.
   logos:
-    - logoImage: /img/powtoon.svg
-      logoName: Powtoon
-    - logoImage: /img/articulate-seeklogo.com.svg
-      logoName: Articulate
-    - logoImage: /img/adobe-premiere-pro.svg
-      logoName: Adobe Premiere Pro
+    - logoImage: /img/unc-logo.jpeg
+      logoName: UNC MEITE Student (Masters in Education Innovation, Technology, and
+        Entrepreneurship)
+    - logoImage: /img/unc-ed-logo.png
+      logoName: Design Thinking Research and Grant Project
+    - logoImage: /img/health-hiv-logo.jpeg
+      logoName: HealthHIV.org Instructional Designer
 heading: Great coffee with a conscience
 subheading: Support sustainable farming while enjoying a cup
 templateKey: index-page
