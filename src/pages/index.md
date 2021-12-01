@@ -15,9 +15,11 @@ mainpitch:
   picture: /img/hp.jpeg
 intro:
   blurbs:
-    - image: /img/adobe-xd-1.svg
+    - image: /img/powtoon.svg
       text: |
-        Adobe XD
+        Powtoon
+    - image: /img/adobe-premiere-pro.svg
+      text: Adobe Premiere Pro
     - image: /img/articulate-seeklogo.com.svg
       text: |
         Articulate
