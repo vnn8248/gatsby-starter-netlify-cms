@@ -1,0 +1,26 @@
+
+
+.profilePic {
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+
+.spaceBetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section:not(.is-desktop) {
+    display: flex;
+    margin-top: -0.75rem;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+    margin-bottom: 2rem;
+}
+@media only screen and (min-width: 1040px) {
+    .center {
+        text-align: center;
+    }
+  }

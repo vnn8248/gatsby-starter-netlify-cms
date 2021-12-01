@@ -48,15 +48,16 @@ collections:
               default: "index-page",
             }
           - { label: Site Title, name: siteTitle, widget: string }
-          - { label: Image, name: image, widget: image }
-          - { label: Heading, name: heading, widget: string }
-          - { label: Subheading, name: subheading, widget: string }
+          - { label: Hero Image, name: heroImage, widget: image }
+          - { label: Hero Heading, name: heroHeading, widget: string }
+          - { label: Hero Subheading, name: heroSubheading, widget: string }
           - {
               label: Mainpitch,
               name: mainpitch,
               widget: object,
               fields:
                 [
+                  { label: Picture, name: picture, widget: image },
                   { label: Title, name: title, widget: string },
                   { label: Description, name: description, widget: text },
                   { label: Resume, name: resume, widget: file },

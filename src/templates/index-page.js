@@ -8,40 +8,42 @@ import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
 import FullWidthImage from "../components/FullWidthImage";
 
+import * as styles from "../../static/css/styles.module.css";
+
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
-  image,
-  heading,
-  subheading,
+  heroImage,
+  heroHeading,
+  heroSubheading,
   mainpitch,
   intro,
 }) => {
-  const heroImage = getImage(image) || image;
+  // const heroImage = getImage(heroImage) || heroImage;
 
-  const resumePath = `/img/${mainpitch.resume.relativePath}`
+  const resumePath = `/img/${mainpitch.resume.relativePath}`;
+  const imagePath = `/img/${mainpitch.picture.relativePath}`;
 
   return (
     <div>
-      <FullWidthImage img={heroImage} title={heading} subheading={subheading} />
+      <FullWidthImage img={heroImage} title={heroHeading} subheading={heroSubheading} />
       <section className="section section--gradient">
         <div className="container">
           <div className="section">
             <div className="columns">
               <div className="column is-10 is-offset-1">
                 <div className="content">
-                  <div className="content">
-                    <div className="tile">
+                  <div className="columns">
+                    <div className="column is-6">
+                      <img className={styles.profilePic} src={imagePath} alt="Jess Schultz" width="200" height="200"></img>
+                    </div>
+                    <div className="column is-6">
                       <h1 className="title">{mainpitch.title}</h1>
-                    </div>
-                    <div className="tile">
                       <h3 className="subtitle">{mainpitch.description}</h3>
-                    </div>
-                    <div className="tile">
-                      <a href={resumePath} download>Download</a>
+                      <a className="btn" href={resumePath} download>Resume</a>
                     </div>
                   </div>
                   <div className="columns">
-                    <div className="column is-12">
+                    <div className="column is-12 has-text-centered">
                       <h3 className="has-text-weight-semibold is-size-2">
                         {intro.heading}
                       </h3>
@@ -49,12 +51,7 @@ export const IndexPageTemplate = ({
                     </div>
                   </div>
                   <Features gridItems={intro.blurbs} />
-                  <div className="columns">
-                    <div className="column is-12 has-text-centered">
-                      <Link className="btn" to="/products">
-                        See all products
-                      </Link>
-                    </div>
+                  <div className="column is-12">
                   </div>
                   <div className="column is-12">
                     <h3 className="has-text-weight-semibold is-size-2">
@@ -120,14 +117,17 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         siteTitle
-        image {
+        heroImage {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: FULL_WIDTH)
           }
         }
-        heading
-        subheading
+        heroHeading
+        heroSubheading
         mainpitch {
+          picture {
+            relativePath
+          }
           title
           description
           resume {
@@ -137,9 +137,7 @@ export const pageQuery = graphql`
         intro {
           blurbs {
             image {
-              childImageSharp {
-                gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
-              }
+              relativePath
             }
             text
           }

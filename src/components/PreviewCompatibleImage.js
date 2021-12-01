@@ -1,40 +1,52 @@
 import * as React from "react";
 import PropTypes from "prop-types";
-import { GatsbyImage } from "gatsby-plugin-image";
+// import { StaticImage } from "gatsby-plugin-image";
 
 const PreviewCompatibleImage = ({ imageInfo }) => {
-  const imageStyle = { borderRadius: "5px" };
+  const { image, text } = imageInfo;
 
-  const { alt = "", childImageSharp, image } = imageInfo;
+  const src = `/img/${image.relativePath}`;
 
-  if (!!image && !!image.childImageSharp) {
-    return (
-      <GatsbyImage
-        image={image.childImageSharp.gatsbyImageData}
-        style={imageStyle}
-        alt={alt}
-      />
-    );
-  } else if (!!childImageSharp) {
-    return (
-      <GatsbyImage
-        image={childImageSharp.gatsbyImageData}
-        style={imageStyle}
-        alt={alt}
-      />
-    );
-    // for Netlify CMS 
-  } else if (image) {
-    return <img style={{imageStyle}} src={image} alt={alt} />;
-  } else {
-    return null
+  const imageStyles = {
+    display: "block",
+    margin: "auto"
   }
+
+  return <img 
+            width="75" 
+            height="75" 
+            src={src} 
+            alt={text} 
+            style={imageStyles}
+          />
+
+  // if (!!image && !!image.publicUrl) {
+  //   return (
+  //     <GatsbyImage
+  //       image={image.publicUrl}
+  //       style={imageStyle}
+  //       alt={text}
+  //     />
+  //   );
+  // } else if (!!image.publicUrl) {
+  //   return (
+  //     <GatsbyImage
+  //       image={image.publicUrl}
+  //       style={imageStyle}
+  //       alt={text}
+  //     />
+  //   );
+  //   // for Netlify CMS 
+  // } else if (image.publicUrl) {
+  //   return <img style={imageStyle} src={image.publicUrl} alt={text} />;
+  // } else {
+  //   return null
+  // }
 };
 
 PreviewCompatibleImage.propTypes = {
   imageInfo: PropTypes.shape({
-    alt: PropTypes.string,
-    childImageSharp: PropTypes.object,
+    publicUrl: PropTypes.string,
     image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]).isRequired,
     style: PropTypes.object,
   }).isRequired,
