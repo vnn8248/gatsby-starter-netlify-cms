@@ -1,5 +1,15 @@
 ---
 heroImage: /img/blog-index.jpg
+skills:
+  heading: My Favorite Tools
+  description: These are my favorite tools
+  logos:
+    - logoImage: /img/powtoon.svg
+      logoName: Powtoon
+    - logoImage: /img/articulate-seeklogo.com.svg
+      logoName: Articulate
+    - logoImage: /img/adobe-premiere-pro.svg
+      logoName: Adobe Premiere Pro
 heading: Great coffee with a conscience
 subheading: Support sustainable farming while enjoying a cup
 templateKey: index-page
@@ -13,23 +23,13 @@ mainpitch:
   resume: /img/bi-s_resume.docx
   picture: /img/hp.jpeg
 heroHeading: Jess Schultz
-shortBio:
-  picture: /img/jess-schultz-profile.webp
-  title: Hello!
-  resume: /img/bi-s_resume.docx
-  description: >-
-    Over the past eight years I’ve helped organizations and programs with a
-    social or environmental purpose gain more brand visibility and become more
-    profitable. I’m especially passionate about building relationships and
-    creating content that will help develop local economies and allow for
-    innovative educational experiences for all.
-
-
-    There’s never been a greater need to leverage technology to find novel approaches to issues such as workforce training, educational effectiveness, sustainable development, and community building than now. 
-
-
-    I’m committed to producing educational content around these conversations. I’m also dedicated to empowering more adults to design careers they love and the world needs!
-  heading: Hello!
+portfolio:
+  heading: What I'm Doing Now
+  description: These are the projects I've done for community organizations,
+    clients, and for fun!
+  pieces:
+    - title: Durham ECAP
+      videoLink: https://www.youtube.com/watch?v=o3WqAo8iNFM
 intro:
   blurbs:
     - image: /img/powtoon.svg
@@ -49,6 +49,23 @@ intro:
   description: >
     Learning is my biggest strength and these are the tech tools I enjoy using
     the most. 
+shortBio:
+  picture: /img/jess-schultz-profile.webp
+  title: Hello!
+  resume: /img/bi-s_resume.docx
+  description: >-
+    Over the past eight years I’ve helped organizations and programs with a
+    social or environmental purpose gain more brand visibility and become more
+    profitable. I’m especially passionate about building relationships and
+    creating content that will help develop local economies and allow for
+    innovative educational experiences for all.
+
+
+    There’s never been a greater need to leverage technology to find novel approaches to issues such as workforce training, educational effectiveness, sustainable development, and community building than now. 
+
+
+    I’m committed to producing educational content around these conversations. I’m also dedicated to empowering more adults to design careers they love and the world needs!
+  heading: Hello!
 siteTitle: Site Title
 main:
   heading: What I'm Doing Now
