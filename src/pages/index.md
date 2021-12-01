@@ -1,9 +1,11 @@
 ---
-templateKey: index-page
-siteTitle: Great coffee with a conscience
-image: /img/home-jumbotron.jpg
+heroImage: /img/blog-index.jpg
 heading: Great coffee with a conscience
 subheading: Support sustainable farming while enjoying a cup
+templateKey: index-page
+siteTitle: Site Title
+heroHeading: Jess Schultz
+heroSubheading: Design Thinker. Instructional Designer. Entrepreneur.
 mainpitch:
   title: Hi, I'm Harry!
   description: >
@@ -29,7 +31,9 @@ intro:
     - image: /img/adobe-captivate-seeklogo.com.svg
       text: Adobe Captivate
   heading: My Favorite Tools
-  description: "\n"
+  description: >
+    Learning is my biggest strength and these are the tech tools I enjoy using
+    the most. 
 main:
   heading: test
   description: test
@@ -42,4 +46,5 @@ main:
   image3:
     image: /img/blog-index.jpg
     alt: test
+image: /img/home-jumbotron.jpg
 ---
