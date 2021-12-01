@@ -17,7 +17,9 @@ intro:
   blurbs:
     - image: /img/powtoon.svg
       text: |
-        Adobe XD
+        Powtoon
+    - image: /img/adobe-premiere-pro.svg
+      text: Adobe Premiere Pro
     - image: /img/articulate-seeklogo.com.svg
       text: |
         Articulate
