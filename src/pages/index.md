@@ -28,7 +28,7 @@ shortBio:
     There’s never been a greater need to leverage technology to find novel approaches to issues such as workforce training, educational effectiveness, sustainable development, and community building than now. 
 
 
-    I’m committed to producing educational content around these conversations. I’m also dedicated to empowering more adults to design careers they love and the world needs.
+    I’m committed to producing educational content around these conversations. I’m also dedicated to empowering more adults to design careers they love and the world needs!
   heading: Hello!
 intro:
   blurbs:
