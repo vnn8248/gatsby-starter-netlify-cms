@@ -28,7 +28,7 @@ intro:
         Moodle
     - image: /img/adobe-captivate-seeklogo.com.svg
       text: Adobe Captivate
-  heading: Tech Skills
+  heading: My Favorite Tools
   description: "\n"
 main:
   heading: test
