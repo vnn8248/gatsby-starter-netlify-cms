@@ -29,7 +29,9 @@ intro:
     - image: /img/adobe-captivate-seeklogo.com.svg
       text: Adobe Captivate
   heading: My Favorite Tools
-  description: "\n"
+  description: >
+    Learning is my biggest strength and these are the tech tools I enjoy using
+    the most. 
 main:
   heading: test
   description: test
