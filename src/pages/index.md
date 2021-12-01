@@ -30,6 +30,10 @@ portfolio:
   pieces:
     - title: Durham ECAP
       videoLink: https://www.youtube.com/watch?v=o3WqAo8iNFM
+    - title: Durham ECAP Spanish
+      videoLink: https://youtu.be/2l97c68ZFsg
+    - title: ATD RTP Recruitment
+      videoLink: https://www.youtube.com/watch?v=z1LwPnRXRgs
 intro:
   blurbs:
     - image: /img/powtoon.svg
