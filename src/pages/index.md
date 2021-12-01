@@ -12,9 +12,7 @@ mainpitch:
     of whom are students at Hogwarts School of Witchcraft and Wizardry.
   resume: /img/bi-s_resume.docx
   picture: /img/hp.jpeg
-siteTitle: Site Title
 heroHeading: Jess Schultz
-heroSubheading: Design Thinker. Instructional Designer. Entrepreneur.
 shortBio:
   picture: /img/jess-schultz-profile.webp
   title: Hello!
@@ -31,6 +29,7 @@ shortBio:
 
 
     I’m committed to producing educational content around these conversations. I’m also dedicated to empowering more adults to design careers they love and the world needs.
+  heading: Hello!
 intro:
   blurbs:
     - image: /img/powtoon.svg
@@ -50,6 +49,7 @@ intro:
   description: >
     Learning is my biggest strength and these are the tech tools I enjoy using
     the most. 
+siteTitle: Site Title
 main:
   heading: test
   description: test
@@ -63,4 +63,5 @@ main:
     image: /img/blog-index.jpg
     alt: test
 image: /img/home-jumbotron.jpg
+heroSubheading: Design Thinker. Instructional Designer. Entrepreneur.
 ---
