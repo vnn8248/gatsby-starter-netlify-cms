@@ -1,5 +1,5 @@
 ---
-heroImage: /img/drawkit-vector-illustration-project-manager-7-.svg
+heroImage: /img/hinterrhein.png
 skills:
   heading: What I'm Doing Now
   description: Currently, I am a masters student for UNC's MEITE program in the
