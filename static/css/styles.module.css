@@ -1,26 +1,113 @@
+/* Utilities */
 
+body {
+    overflow-x: hidden;
+}
+
+.bbShade {
+    border-bottom: 1px solid rgba(61,64,91,.1);
+    box-shadow: 0 3px 8px rgb(61 64 91 / 5%);
+}
+
+.greenShade {
+    border: 1px solid #75c9a8;
+    border-radius: 3%;
+    box-shadow: 6px 3px 3px #75c9a8;
+}
+
+.darkBkgrd {
+    background-color: #00213f !important;
+}
+
+/* Mobile styles */
+
+.jsLogo {
+    max-height: 4rem !important;
+}
+
+.navbarBrand {
+    align-items: center !important;
+}
+
+.heroContainer {
+    margin-bottom: 6rem;
+}
+
+.heroImage {
+    grid-area: 1/1;
+    max-height: 100vh;
+}
 
 .profilePic {
     border-radius: 50%;
     display: block;
     margin: auto;
+    height: 200px;
+    width: 200px;
+}
+
+.shortBio h1, .shortBio p {
+    padding: 20px;
+}
+
+.shortBio h1, .shortBio div  {
+    text-align: center;
+}
+
+.shortBio p {
+    line-height: 1.5;
+}
+
+.whatSection {
+    padding: 20px !important;
+}
+
+.whatSection h3 {
+    text-align: center;
+}
+
+.whatSection p {
+    text-align: left;
+}
+
+.features p {
+    max-width: 50%;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.modalCard {
+    padding: 20px;
+}
+
+.latestBlogs h3 {
+    text-align: center;
+}
+
+.outer {
+    margin-bottom: 6rem;
 }
 
 
-.spaceBetween {
-    display: flex;
-    justify-content: space-between;
+/* 
+.companyLogo {
+    For modal script
+}
+*/
+
+.companyLogoImage {
+    border: 1px solid #ffaa9b;
+    box-shadow: 6px 3px 3px #ffaa9b;
+    border-radius: 3%;
+    width: 100px;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
-.section:not(.is-desktop) {
-    display: flex;
-    margin-top: -0.75rem;
-    margin-right: -0.75rem;
-    margin-left: -0.75rem;
-    margin-bottom: 2rem;
+.companyLogoImage:hover {
+    cursor: pointer;
+    -webkit-transform: scale(0.9);
+	transform: scale(0.9);
 }
-@media only screen and (min-width: 1040px) {
-    .center {
-        text-align: center;
-    }
-  }

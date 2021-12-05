@@ -1,0 +1,58 @@
+import * as React from "react";
+import PropTypes from "prop-types";
+
+import * as styles from '../../static/css/styles.module.css'
+
+const Experience = ({ gridItems }) => {
+    return (
+    <div className="columns is-multiline container" id="experiences">
+        {gridItems.map((item) => (
+            <div key={item.companyName} className="column is-4">
+
+                <figure className="image is-inline-block">
+                    <img 
+                        src={`/img/${item.companyLogo.relativePath}`} 
+                        alt={item.companyName} 
+                        className={`companyLogo ${styles.companyLogoImage}`}
+                    />
+                </figure>
+
+                <div className={`modal ${styles.modalCard}`} id={item.companyName}>
+                    <div className="modal-background"></div>
+                    <div className="modal-card">
+                        <header className="modal-card-head column">
+                            <div>
+                                <img 
+                                    src={`/img/${item.companyLogo.relativePath}`} 
+                                    alt={item.companyName} 
+                                    width="100px" 
+                                    height="100px"
+                                /> 
+                            </div>
+                            <div>
+                                <p className="modal-card-title">{item.companyName}</p>
+                                <p className="modal-card-title">{item.jobTitle}</p>
+                            </div>
+                        </header>
+                        <section className="modal-card-body">{item.jobDescription}</section>
+                        <footer className="modal-card-foot">
+                            <button className="button is-success close-experience">Close</button>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        ))}
+    </div>
+    )
+};
+
+Experience.propTypes = {
+  gridItems: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string,
+      videoLink: PropTypes.string,
+    })
+  ),
+};
+
+export default Experience;

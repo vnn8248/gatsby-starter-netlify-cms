@@ -5,11 +5,15 @@ import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 import * as styles from "../../static/css/styles.module.css";
 
 const FeatureGrid = ({ gridItems }) => (
-  <div className={styles.spaceBetween}>
+  <div className={`columns is-multiline ${styles.features}`}>
     {gridItems.map((item) => (
-      <div key={item.text} className="column is-2">
-        <PreviewCompatibleImage imageInfo={item} />
-        <p className={styles.center}>{item.text}</p>
+      <div key={item.logoName} className="column is-flex is-flex-direction-column is-justify-content-space-between mb-6">
+        <div>
+          <PreviewCompatibleImage imageInfo={item} />
+        </div>
+        <div>
+          <p className="has-text-centered">{item.logoName}</p>
+        </div>
       </div>
     ))}
   </div>
@@ -18,8 +22,8 @@ const FeatureGrid = ({ gridItems }) => (
 FeatureGrid.propTypes = {
   gridItems: PropTypes.arrayOf(
     PropTypes.shape({
-      image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-      text: PropTypes.string,
+      logoImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+      logoName: PropTypes.string,
     })
   ),
 };

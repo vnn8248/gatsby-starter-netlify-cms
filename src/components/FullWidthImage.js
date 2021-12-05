@@ -2,19 +2,21 @@ import React from "react";
 import PropTypes from "prop-types";
 import { GatsbyImage } from "gatsby-plugin-image";
 
+import * as styles from '../../static/css/styles.module.css';
+
 export default function FullWidthImage(props) {
   const {
-    height = 400,
+    height = "75vh",
     img,
-    title,
-    subheading,
-    imgPosition = "top left",
+    heroHeading,
+    heroSubheading,
+    imgPosition = "center center",
   } = props;
 
   return (
     <React.Fragment>
       <div
-        className="margin-top-0"
+        className={`margin-top-0 ${styles.heroContainer}`}
         style={{
           display: "grid",
           alignItems: "center",
@@ -42,20 +44,15 @@ export default function FullWidthImage(props) {
             image={img}
             objectFit={"cover"}
             objectPosition={imgPosition}
-            style={{
-              gridArea: "1/1",
-              // You can set a maximum height for the image, if you wish.
-              maxHeight: height,
-            }}
-            layout="fullWidth"
             // You can optionally force an aspect ratio for the generated image
             aspectratio={3 / 1}
             // This is a presentational image, so the alt should be an empty string
             alt=""
             formats={["auto", "webp", "avif"]}
+            className={`${styles.bbShade} ${styles.heroImage}`}
           />
         )}
-        {(title || subheading) && (
+        {(heroHeading || heroSubheading) && (
           <div
             style={{
               // By using the same grid area for both, they are stacked on top of each other
@@ -67,7 +64,7 @@ export default function FullWidthImage(props) {
             }}
           >
             {/* Any content here will be centered in the component */}
-            {title && (
+            {heroHeading && (
               <h1
                 className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
                 style={{
@@ -79,10 +76,10 @@ export default function FullWidthImage(props) {
                   padding: "0.25em",
                 }}
               >
-                {title}
+                {heroHeading}
               </h1>
             )}
-            {subheading && (
+            {heroSubheading && (
               <h3
                 className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
                 style={{
@@ -90,12 +87,13 @@ export default function FullWidthImage(props) {
                     "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
                   backgroundColor: "rgb(255, 68, 0)",
                   color: "white",
-                  lineHeight: "1",
+                  lineHeight: "1.5",
                   padding: "0.25rem",
                   marginTop: "0.5rem",
+                  textAlign: "center"
                 }}
               >
-                {subheading}
+                {heroSubheading}
               </h3>
             )}
           </div>
@@ -107,7 +105,7 @@ export default function FullWidthImage(props) {
 
 FullWidthImage.propTypes = {
   img: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  title: PropTypes.string,
+  heroHeading: PropTypes.string,
   height: PropTypes.number,
-  subheading: PropTypes.string,
+  heroSubheading: PropTypes.string,
 };

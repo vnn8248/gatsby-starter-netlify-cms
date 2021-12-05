@@ -1,7 +1,10 @@
 import React from "react";
+// import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import linkedin from "../img/social/linkedin.svg";
 import logo from "../img/jess-schultz-logo.svg";
+
+import * as styles from '../../static/css/styles.module.css';
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -33,16 +36,18 @@ const Navbar = class extends React.Component {
   }
 
   render() {
+    // const resume = this.data.markdownRemark.frontmatter.shortBio.resume;
+    // const resumePath = `/img/${resume.relativePath}`;
     return (
       <nav
-        className="navbar is-transparent"
+        className={`navbar is-transparent ${styles.bbShade}`}
         role="navigation"
         aria-label="main-navigation"
       >
         <div className="container">
-          <div className="navbar-brand">
+          <div className={`navbar-brand ${styles.navbarBrand}`}>
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Jess Schultz Logo" style={{ width: "88px" }} />
+              <img src={logo} alt="Jess Schultz Logo" className={styles.jsLogo} />
             </Link>
             {/* Hamburger menu */}
             <div
@@ -90,6 +95,7 @@ const Navbar = class extends React.Component {
                   <img src={linkedin} alt="Jess Schultz LinkedIn" />
                 </span>
               </a>
+              {/* <a className="btn" href={resumePath} download>Resume</a> */}
             </div>
           </div>
         </div>
@@ -98,4 +104,26 @@ const Navbar = class extends React.Component {
   }
 };
 
+// Navbar.propTypes = {
+//   data: PropTypes.shape({
+//     markdownRemark: PropTypes.shape({
+//       frontmatter: PropTypes.object,
+//     }),
+//   }),
+// }
+
 export default Navbar;
+
+// export const pageQuery = graphql`
+//   query IndexPageTemplate {
+//     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+//       frontmatter {
+//         shortBio {
+//           resume {
+//             relativePath
+//           }
+//         }
+//       }
+//     }
+//   }
+// `;

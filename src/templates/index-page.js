@@ -1,12 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
-import { getImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 import Layout from "../components/Layout";
 import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
 import FullWidthImage from "../components/FullWidthImage";
+import PortfolioGrid from "../components/Portfolio";
+import Experience from "../components/Experience";
 
 import * as styles from "../../static/css/styles.module.css";
 
@@ -15,74 +17,85 @@ export const IndexPageTemplate = ({
   heroImage,
   heroHeading,
   heroSubheading,
-  mainpitch,
-  intro,
+  shortBio,
+  whatImDoingNow,
+  portfolio,
+  experience
 }) => {
-  // const heroImage = getImage(heroImage) || heroImage;
+  const fullHeroImage = getImage(heroImage) || heroImage;
+  const profileImage = getImage(shortBio.picture) || shortBio.picture;
 
-  const resumePath = `/img/${mainpitch.resume.relativePath}`;
-  const imagePath = `/img/${mainpitch.picture.relativePath}`;
+  const resumePath = `/img/${shortBio.resume.relativePath}`;
 
   return (
-    <div>
-      <FullWidthImage img={heroImage} title={heroHeading} subheading={heroSubheading} />
-      <section className="section section--gradient">
+    <div className={styles.outer}>
+      <FullWidthImage img={fullHeroImage} heroHeading={heroHeading} heroSubheading={heroSubheading} />
         <div className="container">
-          <div className="section">
-            <div className="columns">
-              <div className="column is-10 is-offset-1">
-                <div className="content">
-                  <div className="columns">
-                    <div className="column is-6">
-                      <img className={styles.profilePic} src={imagePath} alt="Jess Schultz" width="200" height="200"></img>
-                    </div>
-                    <div className="column is-6">
-                      <h1 className="title">{mainpitch.title}</h1>
-                      <h3 className="subtitle">{mainpitch.description}</h3>
-                      <a className="btn" href={resumePath} download>Resume</a>
-                    </div>
-                  </div>
-                  <div className="columns">
-                    <div className="column is-12 has-text-centered">
-                      <h3 className="has-text-weight-semibold is-size-2">
-                        {intro.heading}
-                      </h3>
-                      <p>{intro.description}</p>
-                    </div>
-                  </div>
-                  <Features gridItems={intro.blurbs} />
-                  <div className="column is-12">
-                  </div>
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      Latest stories
-                    </h3>
-                    <BlogRoll />
-                    <div className="column is-12 has-text-centered">
-                      <Link className="btn" to="/blog">
-                        Read more
-                      </Link>
-                    </div>
-                  </div>
+          <div className="content">
+            <div className="columns mb-12 mt-6 mb-6">
+              <div className="column is-6">
+                <GatsbyImage image={profileImage} alt="Jess Schultz" className={styles.profilePic} />
+              </div>
+              <div className={`column is-6 ${styles.shortBio}`}>
+                <h1 className="title has-text-weight-semibold">{shortBio.heading}</h1>
+                <p className="subtitle">{shortBio.body}</p>
+                <div>
+                  <a className="btn" href={resumePath} download>Resume</a>
                 </div>
+              </div>
+            </div>
+            <div className={`column is-12 mb-6 has-text-white-ter ${styles.darkBkgrd} ${styles.whatSection}`}>
+              <h3 className="has-text-weight-semibold has-text-white-ter is-size-2">
+                {whatImDoingNow.heading}
+              </h3>
+              <p className="mb-6">{whatImDoingNow.description}</p>
+              <Features gridItems={whatImDoingNow.logos} />
+            </div>
+            <div className="column is-12 has-text-centered mb-6">
+              <h3 className="has-text-weight-semibold is-size-2">
+                {portfolio.heading}
+              </h3>
+              <p className="mb-5">{portfolio.description}</p>
+              <PortfolioGrid gridItems={portfolio.pieces} className="mb-6"/>
+            </div>
+            <div className="column is-12 has-text-centered mb-6">
+              <h3 className="has-text-weight-semibold is-size-2">
+                {experience.heading}
+              </h3>
+              <p className="mb-5">{experience.description}</p>
+              <Experience gridItems={experience.pastExperience} className="mb-6"/>
+            </div>
+            <div className={`column is-12 ${styles.latestBlogs}`}>
+              <h3 className="has-text-weight-semibold is-size-2">
+                Latest Blogs
+              </h3>
+              <BlogRoll />
+              <div className="column is-12 has-text-centered">
+                <Link className="btn" to="/blog">
+                  Read more
+                </Link>
               </div>
             </div>
           </div>
         </div>
-      </section>
     </div>
   );
 };
 
 IndexPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  siteTitle: PropTypes.string,
-  heading: PropTypes.string,
-  subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
+  heroImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  heroHeading: PropTypes.string,
+  heroSubheading: PropTypes.string,
+  shortBio: PropTypes.object,
+  whatImDoingNow: PropTypes.shape({
+    logos: PropTypes.array,
   }),
+  portfolio: PropTypes.shape({
+    pieces: PropTypes.array,
+  }),
+  experience: PropTypes.shape({
+    companyLogos: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
+  })
 };
 
 const IndexPage = ({ data }) => {
@@ -91,12 +104,13 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <IndexPageTemplate
-        image={frontmatter.image}
-        siteTitle={frontmatter.siteTitle}
-        heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
-        intro={frontmatter.intro}
+        heroImage={frontmatter.heroImage}
+        heroHeading={frontmatter.heroHeading}
+        heroSubheading={frontmatter.heroSubheading}
+        shortBio={frontmatter.shortBio}
+        whatImDoingNow={frontmatter.whatImDoingNow}
+        portfolio={frontmatter.portfolio}
+        experience={frontmatter.experience}
       />
     </Layout>
   );
@@ -116,7 +130,6 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-        siteTitle
         heroImage {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: FULL_WIDTH)
@@ -124,25 +137,47 @@ export const pageQuery = graphql`
         }
         heroHeading
         heroSubheading
-        mainpitch {
+        shortBio {
           picture {
-            relativePath
+            childImageSharp {
+              gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+            }
           }
-          title
-          description
+          heading
+          body
           resume {
             relativePath
           }
         }
-        intro {
-          blurbs {
-            image {
-              relativePath
-            }
-            text
-          }
+        whatImDoingNow {
           heading
           description
+          logos {
+            logoImage {
+              relativePath
+            }
+            logoName
+          }
+        }
+        portfolio {
+          heading
+          description
+          pieces {
+            title
+            videoLink
+          }
+        }
+        experience {
+          heading
+          description
+          pastExperience {
+            companyLogo {
+              relativePath
+            }
+            companyName
+            jobTitle
+            jobDescription
+          }
         }
       }
     }

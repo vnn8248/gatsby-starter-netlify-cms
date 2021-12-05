@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import "./all.sass";
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
 
@@ -48,6 +49,7 @@ const TemplateWrapper = ({ children }) => {
           property="og:image"
           content={`${withPrefix("/")}img/og-image.jpg`}
         />
+        <script type='text/javascript' src='/js/script.js' defer key='static-script'></script>
       </Helmet>
       <Navbar />
       <div>{children}</div>
