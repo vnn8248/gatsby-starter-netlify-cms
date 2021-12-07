@@ -72,7 +72,7 @@ portfolio:
   description: These are the projects I've done for community organizations,
     clients, and for fun!
   pieces:
-    - title: Durham Early Childhood Action Plan - English Explainer Video
+    - title: Durham Early Childhood Action Plan (ECAP) - English Explainer Video
       videoLink: https://www.youtube.com/embed/jpTSaxe7Em8
       description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -81,7 +81,7 @@ portfolio:
         voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
         sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum.
-    - title: Durham Early Childhood Action Plan - Spanish Explainer Video
+    - title: Durham ECAP - Spanish Explainer Video
       videoLink: https://www.youtube.com/embed/BlO8t1FIIh8
       description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -99,6 +99,12 @@ portfolio:
         voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
         sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum..
+    - title: Business Model Canvas Key Resources Video (1-day development)
+      videoLink: https://www.youtube.com/embed/R8FY00azRMI
+    - title: ENERGY STAR Product Partners Conference Agenda
+      videoLink: https://www.energystar.gov/sites/default/files/asset/document/2014_ES_Products_Partner_Meeting_Agenda.pdf
+    - title: Durham ECAP Website and Content Design and Development
+      videoLink: https://sites.google.com/view/durhamecap/home
 experience:
   heading: What I've Done In The Past
   description: I have a background in business, specifically marketing, business
