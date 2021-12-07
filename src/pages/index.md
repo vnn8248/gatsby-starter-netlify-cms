@@ -72,8 +72,8 @@ whatImDoingNow:
 portfolio:
   heading: Portfolio
   description: These are the projects I've done for community organizations,
-    clients, and for fun! All include multiple aspects of the design thinking
-    process with at least one stage highlighted in each.
+    clients, and for fun! All projects include multiple aspects of the design
+    thinking process with at least one stage highlighted in each work example.
   pieces:
     - title: Durham Early Childhood Action Plan (ECAP) - English Explainer Video
       videoLink: https://www.youtube.com/embed/o3WqAo8iNFM
