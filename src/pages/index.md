@@ -50,19 +50,16 @@ shortBio:
     social or environmental purpose gain more brand visibility and become more
     profitable. In my view, we work too much not to enjoy and positively
     contribute to the world with what we do every day. My own career experiences
-    and interests converge at the intersection of relationship building, content
-    creation, and program design. I'm especially passionate about sustainable,
-    community-based development with accessible careers and economic mobility at
-    its core. To support this, I'm open to opportunities to produce educational
-    content and programs that will develop local economies and allow for
-    innovative educational experiences for all. I’m also dedicated to empowering
-    more adults to design careers they love and the world needs!
+    have fostered interests at the intersection of relationship building,
+    content creation, and program design. I'm especially passionate about
+    sustainable, community-based development with accessible careers and
+    economic mobility at its core. To support this, I'm open to opportunities to
+    produce educational content and programs that will develop local economies
+    and allow for innovative educational experiences for all. I’m also dedicated
+    to empowering more adults to design careers they love and the world needs!
 whatImDoingNow:
-  heading: Current Experience
-  description: Currently I'm attending the University of North Carolina - Chapel
-    Hill as a Master's of Education student. I'm also supporting HealthHIV in
-    learning design and Community Empowerment Fund in member resource
-    navigation.
+  heading: Current and Past Work Samples
+  description: n/a
   logos:
     - logoImage: /img/unc-ed-logo.png
       logoName: Masters in Education Innovation, Technology, and Entrepreneurship
@@ -71,24 +68,39 @@ whatImDoingNow:
     - logoImage: /img/health-hiv-logo.jpeg
       logoName: HealthHIV Instructional Design and Development Team
 portfolio:
-  heading: Work Samples
-  description: These are the examples of past work I've done for community
-    organizations, clients, and for fun!
+  heading: Portfolio
+  description: These are the projects I've done for community organizations,
+    clients, and for fun!
   pieces:
-    - title: Durham Early Childhood Action Plan (ECAP) - English Explainer Video
+    - title: Durham Early Childhood Action Plan - English Explainer Video
       videoLink: https://www.youtube.com/embed/jpTSaxe7Em8
-    - title: Durham ECAP - Spanish Explainer Video
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+    - title: Durham Early Childhood Action Plan - Spanish Explainer Video
       videoLink: https://www.youtube.com/embed/BlO8t1FIIh8
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
     - title: Association for Talent Development Explainer Video
       videoLink: https://www.youtube.com/embed/z1LwPnRXRgs
-    - videoLink: https://sites.google.com/view/durhamecap/home
-      title: ECAP Content and Website Design and Development
-    - title: Business Model Canvas Key Resources Video (1-day development)
-      videoLink: https://www.youtube.com/embed/R8FY00azRMI
-    - videoLink: https://www.energystar.gov/sites/default/files/asset/document/2014_ES_Products_Partner_Meeting_Agenda.pdf
-      title: ENERGY STAR Strategic Partners Event Networking Coordination
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum..
 experience:
-  heading: Past Experience
+  heading: What I've Done In The Past
   description: I have a background in business, specifically marketing, business
     development, and creating strategic partnerships.
   pastExperience:
