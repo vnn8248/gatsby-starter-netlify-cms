@@ -28,7 +28,7 @@ mainpitch:
   resume: /img/bi-s_resume.docx
   picture: /img/hp.jpeg
 heroHeading: Jess Schultz
-heroSubheading: Design Thinker. Instructional Designer. Entrepreneur.
+heroSubheading: Program and business developer turned instructional designer.
 shortBio:
   picture: /img/jess-schultz-profile.webp
   title: Hello!
@@ -46,18 +46,17 @@ shortBio:
 
     I’m committed to producing educational content around these conversations. I’m also dedicated to empowering more adults to design careers they love and the world needs!
   heading: Hello!
-  body: >-
-    Over the past eight years I’ve helped organizations and programs with a
+  body: Over the past nine years I’ve helped organizations and programs with a
     social or environmental purpose gain more brand visibility and become more
-    profitable. I’m especially passionate about building relationships and
-    creating content that will help develop local economies and allow for
-    innovative educational experiences for all.
-
-
-    There’s never been a greater need to leverage technology to find novel approaches to issues such as workforce training, educational effectiveness, sustainable development, and community building than now.
-
-
-    I’m committed to producing educational content around these conversations. I’m also dedicated to empowering more adults to design careers they love and the world needs!
+    profitable. I believe we work too much not to enjoy and positively
+    contribute to the world with what we do every day. My interests are at the
+    intersection of  relationship building, content creation, and program
+    design. I'm especially passionate about sustainable, community-based
+    development with accessible careers and economic mobility at its core. I’m
+    committed to producing educational content and programs to help develop
+    local economies and allow for innovative educational experiences for all.
+    I’m also dedicated to empowering more adults to design careers they love and
+    the world needs!
 whatImDoingNow:
   heading: What I'm Doing Now
   description: I am a masters student for UNC's MEITE program in the school of
