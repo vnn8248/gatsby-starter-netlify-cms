@@ -72,11 +72,11 @@ portfolio:
   description: These are the projects I've done for community organizations,
     clients, and for fun!
   pieces:
-    - title: Durham ECAP
+    - title: Durham Early Childhood Action Plan - English Explainer Video
       videoLink: https://www.youtube.com/embed/jpTSaxe7Em8
-    - title: Durham ECAP Spanish
+    - title: Durham Early Childhood Action Plan - Spanish Explainer Video
       videoLink: https://www.youtube.com/embed/BlO8t1FIIh8
-    - title: ATD RTP Recruitment
+    - title: Association for Talent Development Explainer Video
       videoLink: https://www.youtube.com/embed/z1LwPnRXRgs
 experience:
   heading: What I've Done In The Past
