@@ -109,8 +109,10 @@ portfolio:
       videoLink: https://sites.google.com/view/durhamecap/home
 experience:
   heading: Past Experience
-  description: I have a background in business, specifically marketing, business
-    development, and creating strategic partnerships.
+  description: I have a background in communications and business, specifically
+    marketing, business development, and creating strategic partnerships. Now I
+    am combining these skillsets with instructional design to help facilitate
+    career pathways training and programming.
   pastExperience:
     - companyLogo: /img/dci-ecap.jpeg
       companyName: NC LiteracyCorps - Durham Children's Initiative - Early Childhood
