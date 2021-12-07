@@ -58,8 +58,10 @@ shortBio:
     and allow for innovative educational experiences for all. I’m also dedicated
     to empowering more adults to design careers they love and the world needs!
 whatImDoingNow:
-  heading: Current and Past Work Samples
-  description: n/a
+  heading: Current Work
+  description: "Currently I'm a Master's student in the Education school, a member
+    of the HealthHIV instructional design and development team, and an advocate
+    for Community Empowerment Fund. "
   logos:
     - logoImage: /img/unc-ed-logo.png
       logoName: Masters in Education Innovation, Technology, and Entrepreneurship
