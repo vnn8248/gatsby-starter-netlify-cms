@@ -63,10 +63,10 @@ whatImDoingNow:
   logos:
     - logoImage: /img/unc-ed-logo.png
       logoName: Masters in Education Innovation, Technology, and Entrepreneurship
-    - logoImage: /img/unc-logo.jpeg
-      logoName: Professor Ryoo Design Thinking and Grant Project
+    - logoImage: /img/cef-durham.png
+      logoName: Community Empowerment Fund Durham Advocate
     - logoImage: /img/health-hiv-logo.jpeg
-      logoName: Instructional Designer
+      logoName: HealthHIV Instructional Design and Development Team
 portfolio:
   heading: Portfolio
   description: These are the projects I've done for community organizations,
