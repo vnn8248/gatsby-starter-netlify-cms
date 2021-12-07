@@ -28,11 +28,11 @@ mainpitch:
   resume: /img/bi-s_resume.docx
   picture: /img/hp.jpeg
 heroHeading: Jess Schultz
-heroSubheading: Design Thinker. Instructional Designer. Entrepreneur.
+heroSubheading: Program and business developer turned instructional designer.
 shortBio:
   picture: /img/jess-schultz-profile.webp
   title: Hello!
-  resume: /img/bi-s_resume.docx
+  resume: /img/jessica-schultz_fall21-resume.pdf
   description: >-
     Over the past eight years I’ve helped organizations and programs with a
     social or environmental purpose gain more brand visibility and become more
@@ -46,43 +46,38 @@ shortBio:
 
     I’m committed to producing educational content around these conversations. I’m also dedicated to empowering more adults to design careers they love and the world needs!
   heading: Hello!
-  body: >-
-    Over the past eight years I’ve helped organizations and programs with a
+  body: Over the past nine years I’ve helped organizations and programs with a
     social or environmental purpose gain more brand visibility and become more
-    profitable. I’m especially passionate about building relationships and
-    creating content that will help develop local economies and allow for
-    innovative educational experiences for all.
-
-
-    There’s never been a greater need to leverage technology to find novel approaches to issues such as workforce training, educational effectiveness, sustainable development, and community building than now.
-
-
-    I’m committed to producing educational content around these conversations. I’m also dedicated to empowering more adults to design careers they love and the world needs!
+    profitable. In my view, we work too much not to enjoy and positively
+    contribute to the world with what we do every day. My own career experiences
+    have fostered interests at the intersection of relationship building,
+    content creation, and program design. I'm especially passionate about
+    sustainable, community-based development with accessible careers and
+    economic mobility at its core. To support this, I'm open to opportunities to
+    produce educational content and programs that will develop local economies
+    and allow for innovative educational experiences for all. I’m also dedicated
+    to empowering more adults to design careers they love and the world needs!
 whatImDoingNow:
-  heading: What I'm Doing Now
-  description: I am a masters student for UNC's MEITE program in the school of
-    education. It is a masters program in education innovation, technology, and
-    entrepreneurship. I have partnered with Professor Ryoo to be a part of the
-    Design Thinking grant project. I also work with HealthHIV.org to develop
-    instructional design courses and materials.
+  heading: Current and Past Work Samples
+  description: n/a
   logos:
     - logoImage: /img/unc-ed-logo.png
       logoName: Masters in Education Innovation, Technology, and Entrepreneurship
-    - logoImage: /img/unc-logo.jpeg
-      logoName: Professor Ryoo Design Thinking and Grant Project
+    - logoImage: /img/cef-durham.png
+      logoName: Community Empowerment Fund Durham Advocate
     - logoImage: /img/health-hiv-logo.jpeg
-      logoName: Instructional Designer
+      logoName: HealthHIV Instructional Design and Development Team
 portfolio:
   heading: Portfolio
   description: These are the projects I've done for community organizations,
     clients, and for fun!
   pieces:
-    - title: Durham ECAP
-      videoLink: https://www.youtube.com/watch?v=o3WqAo8iNFM
-    - title: Durham ECAP Spanish
-      videoLink: https://youtu.be/2l97c68ZFsg
-    - title: ATD RTP Recruitment
-      videoLink: https://www.youtube.com/watch?v=z1LwPnRXRgs
+    - title: Durham Early Childhood Action Plan - English Explainer Video
+      videoLink: https://www.youtube.com/embed/jpTSaxe7Em8
+    - title: Durham Early Childhood Action Plan - Spanish Explainer Video
+      videoLink: https://www.youtube.com/embed/BlO8t1FIIh8
+    - title: Association for Talent Development Explainer Video
+      videoLink: https://www.youtube.com/embed/z1LwPnRXRgs
 experience:
   heading: What I've Done In The Past
   description: I have a background in business, specifically marketing, business
