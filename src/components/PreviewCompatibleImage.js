@@ -15,8 +15,7 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
   
   
       return <img 
-                width="75" 
-                height="75" 
+                width="75px" 
                 src={src} 
                 alt={logoName} 
                 style={imageStyles}

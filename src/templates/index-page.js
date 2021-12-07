@@ -45,10 +45,12 @@ export const IndexPageTemplate = ({
               </div>
             </div>
             <div className={`column is-12 mb-6 ${styles.whatSection}`} id="portfolio">
-              <h3 className="has-text-weight-semibold is-size-2">
-                {whatImDoingNow.heading}
-              </h3>
-              <p className="mb-6">{whatImDoingNow.description}</p>
+              <div className="">
+                <h3 className="has-text-weight-semibold is-size-2">
+                  {whatImDoingNow.heading}
+                </h3>
+                <p className="mb-6">{whatImDoingNow.description}</p>
+              </div>
               <Features gridItems={whatImDoingNow.logos} />
             </div>
             <div className="column is-12 mb-6">

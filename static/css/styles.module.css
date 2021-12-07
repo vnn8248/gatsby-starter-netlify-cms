@@ -80,16 +80,29 @@ body {
     box-shadow: 0 0.5em 1em -0.125em rgb(43 37 35 / 10%), 0 0px 0 1px rgb(43 37 35 / 2%);
 }
 
+.whatSection .headingBox {
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0.5em 1em -0.125em rgb(43 37 35 / 10%), 0 0px 0 1px rgb(43 37 35 / 2%);
+    border-radius: 0.25rem;
+    margin-bottom: 3rem !important;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
 .whatSection h3 {
     text-align: center;
 }
 
 .whatSection p {
     text-align: left;
+    width: 80%;
+    margin: auto;
 }
 
 .features p {
-    max-width: 50%;
+    max-width: 75%;
     margin: auto;
     margin-top: 1rem;
 }

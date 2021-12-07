@@ -5,9 +5,9 @@ import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 import * as styles from "../../static/css/styles.module.css";
 
 const FeatureGrid = ({ gridItems }) => (
-  <div className={`columns is-multiline ${styles.features}`}>
+  <div className={`columns is-multiline ${styles.features} ${styles.headingBox}`}>
     {gridItems.map((item) => (
-      <div key={item.logoName} className="column is-flex is-flex-direction-column is-justify-content-space-between mb-6">
+      <div key={item.logoName} className="column is-flex is-flex-direction-column is-justify-content-space-between">
         <div>
           <PreviewCompatibleImage imageInfo={item} />
         </div>
