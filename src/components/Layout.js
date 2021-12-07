@@ -7,7 +7,14 @@ import "./all.sass";
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
 
+import script from '../../static/js/script';
+
 const TemplateWrapper = ({ children }) => {
+
+  React.useEffect(() => {
+    script();
+  }, []);
+
   const { title, description } = useSiteMetadata();
   return (
     <div>
@@ -49,7 +56,7 @@ const TemplateWrapper = ({ children }) => {
           property="og:image"
           content={`${withPrefix("/")}img/og-image.jpg`}
         />
-        <script type='text/javascript' src='/js/script.js' defer key='static-script'></script>
+      {/* <script type='text/javascript' src={withPrefix('/js/script.js')}></script> */}
       </Helmet>
       <Navbar />
       <div>{children}</div>
