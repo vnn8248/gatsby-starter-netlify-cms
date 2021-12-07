@@ -32,7 +32,7 @@ export const IndexPageTemplate = ({
       <FullWidthImage img={fullHeroImage} heroHeading={heroHeading} heroSubheading={heroSubheading} />
         <div className="container">
           <div className="content">
-            <div className="columns mb-12 mt-6 mb-6">
+            <div className="columns mb-12 mt-6 mb-6" id="about">
               <div className="column is-6">
                 <GatsbyImage image={profileImage} alt="Jess Schultz" className={styles.profilePic} />
               </div>
@@ -44,7 +44,7 @@ export const IndexPageTemplate = ({
                 </div>
               </div>
             </div>
-            <div className={`column is-12 mb-6 has-text-white-ter ${styles.darkBkgrd} ${styles.whatSection}`}>
+            <div className={`column is-12 mb-6 has-text-white-ter ${styles.darkBkgrd} ${styles.whatSection}`} id="portfolio">
               <h3 className="has-text-weight-semibold has-text-white-ter is-size-2">
                 {whatImDoingNow.heading}
               </h3>
