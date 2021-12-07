@@ -9,12 +9,6 @@ body {
     box-shadow: 0 3px 8px rgb(61 64 91 / 5%);
 }
 
-.greenShade {
-    border: 1px solid #75c9a8;
-    border-radius: 3%;
-    box-shadow: 6px 3px 3px #75c9a8;
-}
-
 .darkBkgrd {
     background-color: #00213f !important;
 }
@@ -95,7 +89,7 @@ body {
     text-align: center;
 }
 
-.whatSection p {
+.whatSection p, .portfolioSection p, .experienceSection p {
     text-align: left;
     width: 80%;
     margin: auto;
@@ -127,18 +121,101 @@ body {
 */
 
 .companyLogoImage {
-    border: 1px solid #ffaa9b;
-    box-shadow: 6px 3px 3px #ffaa9b;
+    border: 1px solid rgba(61,64,91,.1);
+    box-shadow: 0 0.5em 1em -0.125em rgb(43 37 35 / 10%), 0 0px 0 1px rgb(43 37 35 / 2%);
     border-radius: 3%;
-    width: 100px;
     -webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
+    width: 50% !important;
 }
 
 .companyLogoImage:hover {
     cursor: pointer;
     -webkit-transform: scale(0.9);
 	transform: scale(0.9);
+}
+
+.modalCardHeader {
+    flex-direction: column;
+}
+
+.modalCardHeader p {
+    width: 100%;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .profilePic {
+        width: 40%;
+    }
+
+    .shortBio p {
+        padding-left: 50px;
+        padding-right: 50px;
+        line-height: 2;
+    }
+
+    .portfolioCards {
+        max-width: 75% !important;
+        margin: 20px auto;
+        padding: 20px !important;
+    }
+
+    .companyLogoImage {
+        width: 25% !important;
+    }
+
+    .modalCardHeader {
+        flex-direction: row;
+    }
+
+    .modalCardHeader div {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .postBox {
+        padding: 0 50px 0 50px !important;
+        margin-bottom: 50px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .about {
+        flex-direction: column !important;
+    }
+
+    .features p {
+        max-width: none;
+    }
+
+    .portfolioCards {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .companyLogoImage {
+        width: 100% !important;
+    }
+
+    .postBox {
+        padding: 20px !important;
+        margin-bottom: 0 !important;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .about {
+        flex-direction: row !important;
+    }
+
+    .profilePic {
+        width: 60%;
+    }
 }

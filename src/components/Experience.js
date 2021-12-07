@@ -5,11 +5,11 @@ import * as styles from '../../static/css/styles.module.css'
 
 const Experience = ({ gridItems }) => {
     return (
-    <div className="columns is-multiline container" id="experiences">
+    <div className="columns" id="experiences">
         {gridItems.map((item) => (
-            <div key={item.companyName} className="column is-4">
+            <div key={item.companyName} className="column">
 
-                <figure className="image is-inline-block">
+                <figure className="image">
                     <img 
                         src={`/img/${item.companyLogo.relativePath}`} 
                         alt={item.companyName} 
@@ -20,7 +20,7 @@ const Experience = ({ gridItems }) => {
                 <div className={`modal ${styles.modalCard}`} id={item.companyName}>
                     <div className="modal-background"></div>
                     <div className="modal-card">
-                        <header className="modal-card-head column">
+                        <header className={`modal-card-head ${styles.modalCardHeader}`}>
                             <div>
                                 <img 
                                     src={`/img/${item.companyLogo.relativePath}`} 
@@ -31,7 +31,8 @@ const Experience = ({ gridItems }) => {
                             </div>
                             <div>
                                 <p className="modal-card-title">{item.companyName}</p>
-                                <p className="modal-card-title">{item.jobTitle}</p>
+                                <hr />
+                                <p className="has-text-weight-semibold">{item.jobTitle}</p>
                             </div>
                         </header>
                         <section className="modal-card-body">{item.jobDescription}</section>

@@ -32,11 +32,11 @@ export const IndexPageTemplate = ({
       <FullWidthImage img={fullHeroImage} heroHeading={heroHeading} heroSubheading={heroSubheading} />
         <div className="container">
           <div className="content">
-            <div className="columns mb-12 mt-6 mb-6" id="about">
-              <div className="column is-6">
+            <div className={`columns mt-6 mb-6 ${styles.about}`}id="about">
+              <div className="column">
                 <GatsbyImage image={profileImage} alt="Jess Schultz" className={styles.profilePic} />
               </div>
-              <div className={`column is-6 ${styles.shortBio}`}>
+              <div className={`column ${styles.shortBio}`}>
                 <h1 className="title has-text-weight-semibold">{shortBio.heading}</h1>
                 <p className="subtitle">{shortBio.body}</p>
                 <div>
@@ -53,18 +53,18 @@ export const IndexPageTemplate = ({
               </div>
               <Features gridItems={whatImDoingNow.logos} />
             </div>
-            <div className="column is-12 mb-6">
+            <div className={`column is-12 mb-6 ${styles.portfolioSection}`}>
               <h3 className="has-text-weight-semibold is-size-2 has-text-centered">
                 {portfolio.heading}
               </h3>
-              <p className="mb-6 has-text-centered">{portfolio.description}</p>
+              <p className="mb-6">{portfolio.description}</p>
               <PortfolioGrid gridItems={portfolio.pieces} className="mb-6"/>
             </div>
-            <div className="column is-12 has-text-centered mb-6">
-              <h3 className="has-text-weight-semibold is-size-2">
+            <div className={`column is-12 mb-6 ${styles.experienceSection}`}>
+              <h3 className="has-text-weight-semibold has-text-centered is-size-2">
                 {experience.heading}
               </h3>
-              <p className="mb-5">{experience.description}</p>
+              <p className="mb-6">{experience.description}</p>
               <Experience gridItems={experience.pastExperience} className="mb-6"/>
             </div>
             <div className={`column is-12 ${styles.latestBlogs}`}>
