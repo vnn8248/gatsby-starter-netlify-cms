@@ -32,7 +32,7 @@ heroSubheading: Program and business developer turned instructional designer.
 shortBio:
   picture: /img/jess-schultz-profile.webp
   title: Hello!
-  resume: /img/bi-s_resume.docx
+  resume: /img/jessica-schultz_fall21-resume.pdf
   description: >-
     Over the past eight years I’ve helped organizations and programs with a
     social or environmental purpose gain more brand visibility and become more
@@ -58,7 +58,7 @@ shortBio:
     I’m also dedicated to empowering more adults to design careers they love and
     the world needs!
 whatImDoingNow:
-  heading: What I'm Doing Now
+  heading: Current and Past Work Samples
   description: I am a masters student for UNC's MEITE program in the school of
     education. It is a masters program in education innovation, technology, and
     entrepreneurship. I have partnered with Professor Ryoo to be a part of the
