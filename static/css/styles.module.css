@@ -59,6 +59,11 @@ body {
     line-height: 1.5;
 }
 
+.portfolioDescription {
+    text-align: left;
+    padding: 20px 40px;
+}
+
 .whatSection {
     padding: 20px !important;
 }

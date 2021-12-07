@@ -165,6 +165,7 @@ export const pageQuery = graphql`
           pieces {
             title
             videoLink
+            description
           }
         }
         experience {

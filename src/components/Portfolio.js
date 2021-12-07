@@ -9,6 +9,7 @@ const PortfolioGrid = ({ gridItems }) => (
       <div key={item.title} className="column">
         <iframe src={item.videoLink} title={item.title} className={styles.greenShade}></iframe>
         <p className="has-text-centered">{item.title}</p>
+        <p className={styles.portfolioDescription}>{item.description}</p>
       </div>
     ))}
   </div>
