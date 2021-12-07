@@ -50,13 +50,13 @@ shortBio:
     social or environmental purpose gain more brand visibility and become more
     profitable. In my view, we work too much not to enjoy and positively
     contribute to the world with what we do every day. My own career experiences
-    have fostered interests at the intersection of relationship building,
-    content creation, and program design. I'm especially passionate about
-    sustainable, community-based development with accessible careers and
-    economic mobility at its core. To support this, I'm open to opportunities to
-    produce educational content and programs that will develop local economies
-    and allow for innovative educational experiences for all. I’m also dedicated
-    to empowering more adults to design careers they love and the world needs!
+    and interests converge at the intersection of relationship building, content
+    creation, and program design. I'm especially passionate about sustainable,
+    community-based development with accessible careers and economic mobility at
+    its core. To support this, I'm open to opportunities to produce educational
+    content and programs that will develop local economies and allow for
+    innovative educational experiences for all. I’m also dedicated to empowering
+    more adults to design careers they love and the world needs!
 whatImDoingNow:
   heading: Current Experience
   description: Currently I'm attending the University of North Carolina - Chapel
