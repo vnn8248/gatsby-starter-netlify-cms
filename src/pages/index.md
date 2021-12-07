@@ -73,11 +73,11 @@ portfolio:
     clients, and for fun!
   pieces:
     - title: Durham ECAP
-      videoLink: https://www.youtube.com/watch?v=o3WqAo8iNFM
+      videoLink: https://www.youtube.com/embed/jpTSaxe7Em8
     - title: Durham ECAP Spanish
       videoLink: https://www.youtube.com/embed/BlO8t1FIIh8
     - title: ATD RTP Recruitment
-      videoLink: https://www.youtube.com/watch?v=z1LwPnRXRgs
+      videoLink: https://www.youtube.com/embed/z1LwPnRXRgs
 experience:
   heading: What I've Done In The Past
   description: I have a background in business, specifically marketing, business
