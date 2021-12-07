@@ -31,7 +31,6 @@ const Experience = ({ gridItems }) => {
                             </div>
                             <div>
                                 <p className="modal-card-title">{item.companyName}</p>
-                                <hr />
                                 <p className="has-text-weight-semibold">{item.jobTitle}</p>
                             </div>
                         </header>
