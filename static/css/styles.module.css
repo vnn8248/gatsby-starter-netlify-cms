@@ -59,6 +59,11 @@ body {
     line-height: 1.5;
 }
 
+.portfolioCards {
+    margin: 1rem;
+    background-color: whitesmoke !important;
+}
+
 .portfolioTitle {
     padding: 20px 40px;
 }
@@ -70,6 +75,9 @@ body {
 
 .whatSection {
     padding: 20px !important;
+    background-color: whitesmoke !important;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.5em 1em -0.125em rgb(43 37 35 / 10%), 0 0px 0 1px rgb(43 37 35 / 2%);
 }
 
 .whatSection h3 {

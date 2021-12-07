@@ -44,18 +44,18 @@ export const IndexPageTemplate = ({
                 </div>
               </div>
             </div>
-            <div className={`column is-12 mb-6 has-text-white-ter ${styles.darkBkgrd} ${styles.whatSection}`} id="portfolio">
-              <h3 className="has-text-weight-semibold has-text-white-ter is-size-2">
+            <div className={`column is-12 mb-6 ${styles.whatSection}`} id="portfolio">
+              <h3 className="has-text-weight-semibold is-size-2">
                 {whatImDoingNow.heading}
               </h3>
               <p className="mb-6">{whatImDoingNow.description}</p>
               <Features gridItems={whatImDoingNow.logos} />
             </div>
-            <div className="column is-12 has-text-centered mb-6">
-              <h3 className="has-text-weight-semibold is-size-2">
+            <div className="column is-12 mb-6">
+              <h3 className="has-text-weight-semibold is-size-2 has-text-centered">
                 {portfolio.heading}
               </h3>
-              <p className="mb-6">{portfolio.description}</p>
+              <p className="mb-6 has-text-centered">{portfolio.description}</p>
               <PortfolioGrid gridItems={portfolio.pieces} className="mb-6"/>
             </div>
             <div className="column is-12 has-text-centered mb-6">
