@@ -55,7 +55,7 @@ export const IndexPageTemplate = ({
               <h3 className="has-text-weight-semibold is-size-2">
                 {portfolio.heading}
               </h3>
-              <p className="mb-5">{portfolio.description}</p>
+              <p className="mb-6">{portfolio.description}</p>
               <PortfolioGrid gridItems={portfolio.pieces} className="mb-6"/>
             </div>
             <div className="column is-12 has-text-centered mb-6">

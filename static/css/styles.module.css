@@ -59,6 +59,10 @@ body {
     line-height: 1.5;
 }
 
+.portfolioTitle {
+    padding: 20px 40px;
+}
+
 .portfolioDescription {
     text-align: left;
     padding: 20px 40px;
