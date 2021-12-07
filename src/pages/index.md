@@ -58,7 +58,7 @@ shortBio:
     and allow for innovative educational experiences for all. I’m also dedicated
     to empowering more adults to design careers they love and the world needs!
 whatImDoingNow:
-  heading: Current Work
+  heading: Current Experience
   description: "Currently I'm a Master's student in the Education school, a member
     of the HealthHIV instructional design and development team, and an advocate
     for Community Empowerment Fund. "
@@ -108,7 +108,7 @@ portfolio:
     - title: Durham ECAP Website and Content Design and Development
       videoLink: https://sites.google.com/view/durhamecap/home
 experience:
-  heading: What I've Done In The Past
+  heading: Past Experience
   description: I have a background in business, specifically marketing, business
     development, and creating strategic partnerships.
   pastExperience:
