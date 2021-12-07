@@ -75,7 +75,7 @@ portfolio:
     clients, and for fun!
   pieces:
     - title: Durham Early Childhood Action Plan (ECAP) - English Explainer Video
-      videoLink: https://www.youtube.com/embed/jpTSaxe7Em8
+      videoLink: https://www.youtube.com/embed/o3WqAo8iNFM
       description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
         minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -84,7 +84,7 @@ portfolio:
         sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum.
     - title: Durham ECAP - Spanish Explainer Video
-      videoLink: https://www.youtube.com/embed/BlO8t1FIIh8
+      videoLink: https://www.youtube.com/embed/2l97c68ZFsg
       description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
         minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
