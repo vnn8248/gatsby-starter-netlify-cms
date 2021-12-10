@@ -45,23 +45,21 @@ shortBio:
 
 
     I’m committed to producing educational content around these conversations. I’m also dedicated to empowering more adults to design careers they love and the world needs!
-  heading: Hello!
-  body: Over the past nine years I’ve helped organizations and programs with a
-    social or environmental purpose gain more brand visibility and become more
-    profitable. In my view, we work too much not to enjoy and positively
-    contribute to the world with what we do every day. My own career experiences
-    have fostered interests at the intersection of relationship building,
-    content creation, and program design. I'm especially passionate about
-    sustainable, community-based development with accessible careers and
-    economic mobility at its core. To support this, I'm open to opportunities to
-    produce educational content and programs that will develop local economies
-    and allow for innovative educational experiences for all. I’m also dedicated
-    to empowering more adults to design careers they love and the world needs!
+  heading: About
+  body: >-
+    ### Hi, I'm Jess!
+
+
+    My own career experiences have fostered interests at the intersection of relationship building, content creation, adult education and program design. I'm open to opportunities to produce educational content and programs for adults that will provide career supports in addition to skill-building opportunities. \
+
+    \
+
+    [Learn More](https://www.jschultzcreates.com/admin/#/collections/pages/entries/about)
 whatImDoingNow:
   heading: Current Experience
-  description: "Currently I'm a Master's student in the Education school, a member
-    of the HealthHIV instructional design and development team, and an advocate
-    for Community Empowerment Fund. "
+  description: "Currently I'm a Master's student in the UNC Education school, a
+    member of the HealthHIV instructional design and development team, and an
+    advocate for Community Empowerment Fund. "
   logos:
     - logoImage: /img/unc-ed-logo.png
       logoName: Masters in Education Innovation, Technology, and Entrepreneurship
