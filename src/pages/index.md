@@ -45,10 +45,16 @@ shortBio:
 
 
     I’m committed to producing educational content around these conversations. I’m also dedicated to empowering more adults to design careers they love and the world needs!
-  heading: Hello!
-  body: Over the past nine years I’ve helped organizations and programs with a
-    social or environmental purpose gain more brand visibility and become more
-    profitable.
+  heading: About
+  body: >-
+    ### Hi, I'm Jess!
+
+
+    My own career experiences have fostered interests at the intersection of relationship building, content creation, adult education and program design. I'm open to opportunities to produce educational content and programs for adults that will provide career supports in addition to skill-building opportunities. \
+
+    \
+
+    [Learn More](https://www.jschultzcreates.com/admin/#/collections/pages/entries/about)
 whatImDoingNow:
   heading: Current Experience
   description: "Currently I'm a Master's student in the UNC Education school, a
