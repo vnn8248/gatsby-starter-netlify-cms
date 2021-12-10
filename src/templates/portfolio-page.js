@@ -14,7 +14,7 @@ export const PortfolioPageTemplate = ({
   description,
   portfolio
 }) => {
-  const heroImage = getImage(image) || image;
+  // const heroImage = getImage(image) || image;
 
   return (
 
